@@ -3,78 +3,389 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
+    <title>Yash Trivedi | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <div class="container">
-      <div class="header">
+      <!-- Header Start -->
+      <header class="header">
         <div class="logo">
-          <h2>Yash Trivedi</h2>
+          <h1>Yash Trivedi</h1>
         </div>
 
-        <input type="checkbox" id="menu-toggle" />
         <label class="hamburger" for="menu-toggle">
-          <div></div>
-          <div></div>
-          <div></div>
+          <span></span>
+          <span></span>
+          <span></span>
         </label>
 
-        <div class="menu">
+        <nav class="menu">
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
+        </nav>
 
         <div class="icons">
-          <a href="#"><img src="./ Assets/leetcode.png" alt="Leetcode" /></a>
-          <a href="#"><img src="./ Assets/github.png" alt="GitHub" /></a>
-          <a href="#"><img src="./ Assets/linkedin.png" alt="LinkedIn" /></a>
+          <a
+            href="https://leetcode.com/u/yash-trivedi-contact/"
+            target="_blank"
+            aria-label="Leetcode"
+          >
+            <img src="./Assets/leetcode.png" alt="Leetcode" />
+          </a>
+          <a
+            href="https://github.com/yashtrivedi1234"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <img src="./Assets/github.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yash-trivedi-contact/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <img src="./Assets/linkedin.png" alt="LinkedIn" />
+          </a>
         </div>
-      </div>
+      </header>
+      <!-- Header End -->
 
-      <div class="hero">
-        <div class="left">
-          <img src="./ Assets/mypic.png" alt="My Pic" />
+      <!-- Hero Section Start -->
+      <main>
+        <section class="hero" id="home">
+          <figure class="left">
+            <img src="./Assets/mypic.png" alt="Yash Trivedi" />
+          </figure>
+          <div class="right">
+            <h2>Yash Trivedi</h2>
+            <p>
+              I am a B.Tech Computer Science student (2027) with a strong
+              interest in full-stack development, back-end systems, and AI
+              integrations. I have a solid academic background and
+              certifications in Full Stack Development, REST APIs, and DevOps,
+              enabling me to design secure, scalable, and data-driven solutions.
+            </p>
+
+            <p>
+              I have completed internships at Unified Mentor Pvt Ltd, Xenovate
+              Tech Solutions, and ERA Foundation India. At Unified Mentor, I
+              developed a video calling platform using WebRTC and JWT
+              authentication. At Xenovate, I built a Python-based web scraper
+              with FastAPI covering 150+ websites. I also led rapid prototyping
+              projects from concept to demo day.
+            </p>
+
+            <p>
+              I have completed 20+ full stack projects including authentication
+              systems, e-commerce APIs, and automation tools using MERN,
+              Next.js, and cloud-native/devops workflows. My goal is to grow as
+              a Full Stack Developer in service-based companies, delivering
+              impactful AI and cloud-first solutions.
+            </p>
+          </div>
+        </section>
+
+        <!-- Projects Section Start -->
+        <section class="projects" id="projects">
+          <header>
+            <h2>My Projects</h2>
+            <hr />
+          </header>
+
+          <div class="projectsContainer">
+            <article class="project">
+              <img
+                src="./Assets/Video Calling Chat Ap.png"
+                alt="Video Calling Chat Ap"
+              />
+              <h3>Video Calling Chat App</h3>
+              <p>
+                A real-time communication platform enabling secure video calls,
+                messaging, and screen sharing. Built using WebRTC, MERN, and
+                Socket.IO, it allows users to connect instantly without
+                additional software, ensuring privacy, smooth performance, and
+                cross-device compatibility for personal and professional
+                collaboration.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://video-calling-chat-app.onrender.com/"
+                  target="_blank"
+                  class="btn"
+                  >Live Link</a
+                >
+                <a
+                  href="https://github.com/yashtrivedi1234/Video-Calling-Chat-App.git"
+                  target="_blank"
+                  class="btn"
+                  >GitHub Link</a
+                >
+              </div>
+            </article>
+
+            <article class="project">
+              <img src="./Assets/url-shortener.png" alt="url-shortener" />
+              <h3>URL Shortener</h3>
+              <p>
+                A web app that shortens long URLs into shareable links with
+                built-in QR code generation. Developed using Node.js, Express,
+                MongoDB, and EJS, it combines modern design, optimized
+                performance, and responsive layout, offering a fast, reliable,
+                and engaging user experience.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://url-shortener-7dex.onrender.com/"
+                  target="_blank"
+                  class="btn"
+                  >Live Link</a
+                >
+                <a
+                  href="https://github.com/yashtrivedi1234/Url-Shortener.git"
+                  target="_blank"
+                  class="btn"
+                  >GitHub Link</a
+                >
+              </div>
+            </article>
+
+            <article class="project">
+              <img src="./Assets/image-uploader.png" alt="image-uploader" />
+              <h3>Image Uploader</h3>
+              <p>
+                A user-friendly uploader that lets individuals preview images
+                before cloud storage. Designed with Node.js, Express, Multer,
+                and Cloudinary, it streamlines file handling while ensuring
+                scalability, secure storage, and efficiency for photographers,
+                businesses, or developers managing media content in modern
+                applications.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://image-uploader-vimt.onrender.com/"
+                  target="_blank"
+                  class="btn"
+                  >Live Link</a
+                >
+                <a
+                  href="https://github.com/yashtrivedi1234/Image-Uploader.git"
+                  target="_blank"
+                  class="btn"
+                  >GitHub Link</a
+                >
+              </div>
+            </article>
+
+            <article class="project">
+              <img
+                src="./Assets/E-commerce API with Authentication.png"
+                alt="E-commerce API with Authentication"
+              />
+              <h3>E-commerce API with Authentication</h3>
+              <p>
+                A RESTful API crafted using Node.js, Express, and MongoDB to
+                handle products, users, and carts. It supports registration,
+                login, and CRUD operations with secure authentication, enabling
+                developers to integrate robust e-commerce functionality into
+                applications requiring reliable, scalable, and efficient backend
+                services.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://e-commerce-api-with-authentication-8ndm.onrender.com/"
+                  target="_blank"
+                  class="btn"
+                  >Live Link</a
+                >
+                <a
+                  href="https://github.com/yashtrivedi1234/E-commerce-Api-With-Authentication.git"
+                  target="_blank"
+                  class="btn"
+                  >GitHub Link</a
+                >
+              </div>
+            </article>
+
+            <article class="project">
+              <img
+                src="./Assets/Contact Api With Full Authentication.png"
+                alt="Contact Api With Full Authentication"
+              />
+              <h3>Contact Api With Full Authentication</h3>
+              <p>
+                A backend service designed to manage user contacts securely
+                using Node.js, Express, and MongoDB. It enables user
+                registration, login, and CRUD operations with full
+                authentication and authorization, supporting scalable
+                applications where efficient, private, and secure contact
+                management functionality is essential.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://contact-api-with-full-authentication-wv2w.onrender.com/"
+                  target="_blank"
+                  class="btn"
+                  >Live Link</a
+                >
+                <a
+                  href="https://github.com/yashtrivedi1234/Contact-Api-With-Full-Authentication.git"
+                  target="_blank"
+                  class="btn"
+                  >GitHub Link</a
+                >
+              </div>
+            </article>
+
+            <article class="project">
+              <img
+                src="./Assets/full-stack-authentication-file-upload.png"
+                alt="full-stack-authentication-file-upload"
+              />
+              <h3>Full Stack Authentication with File Upload</h3>
+              <p>
+                A complete MERN stack application integrating secure user
+                authentication with image file uploads. Using Express, MongoDB,
+                Multer, Cloudinary, and EJS, it delivers reliable registration,
+                login, and media management, providing a strong foundation for
+                scalable, real-world full-stack development projects.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://full-stack-authentication-with-file.onrender.com/"
+                  target="_blank"
+                  class="btn"
+                  >Live Link</a
+                >
+                <a
+                  href="https://github.com/yashtrivedi1234/Full-Stack-Authentication-with-File-upload.git"
+                  target="_blank"
+                  class="btn"
+                  >GitHub Link</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Projects Section End -->
+
+        <!-- Contact Section Start -->
+        <section class="contact" id="contact">
+          <header>
+            <h2>Contact Me</h2>
+            <hr />
+          </header>
+
+          <div class="contactContainer">
+            <article class="let">
+              <h3>Let's Talk</h3>
+              <p>
+                Feel free to reach out to me for collaborations, projects, or
+                opportunities. I'm always open to discussing new ideas and
+                challenges!
+              </p>
+              <p>
+                <i class="bi bi-envelope-at"></i> yashtrivedi.contact@gmail.com
+              </p>
+              <p><i class="bi bi-telephone-fill"></i> +91 9452819739</p>
+              <p><i class="bi bi-geo-alt-fill"></i> Sitapur, Uttar Pradesh</p>
+            </article>
+
+            <aside class="form">
+              <form>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+              </form>
+            </aside>
+          </div>
+        </section>
+        <!-- Contact Section End -->
+      </main>
+      <!-- Fotter Start -->
+      <footer>
+        <div class="footerContainer">
+          <div class="footerAbout">
+            <h3>Yash Trivedi</h3>
+            <p>
+              B.Tech Computer Science (2027) | Full Stack Developer | AI & Cloud
+              Enthusiast
+            </p>
+          </div>
+
+          <div class="footerLinks">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footerSocial">
+            <h4>Follow Me</h4>
+            <a
+              href="https://leetcode.com/u/yash-trivedi-contact/"
+              target="_blank"
+              aria-label="Leetcode"
+            >
+              <img src="./Assets/leetcode.png" alt="Leetcode" />
+            </a>
+            <a
+              href="https://github.com/yashtrivedi1234"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <img src="./Assets/github.png" alt="GitHub" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yash-trivedi-contact/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <img src="./Assets/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
         </div>
-        <div class="right">
-          <h1>Yash Trivedi</h1>
-          <p>
-            I am a B.Tech Computer Science student (2027) with a strong interest
-            in full-stack development, back-end systems, and AI integrations. I
-            have a solid academic background and two certifications in Full
-            Stack Development, REST APIs, and DevOps, which allow me to
-            effectively design and produce secure, scalable, and data-driven
-            solutions. I have also been selected as a Google Student Ambassador
-            (Gemini Program), where I am responsible for promoting AI onboarding
-            and innovation at the campus level.
-          </p>
 
-          <p>
-            I have completed internships at Unified Mentor Private Limited,
-            Xenovate Tech Solutions, ERA Foundation India, where I have used my
-            skills to tackle real world problems. At Unified Mentor, I created a
-            video calling platform using WebRTC, alongside implementing JSON Web
-            Token (JWT) authentication and at Xenovate Tech Solutions I built a
-            Python-based web scraper using FastAPI for over 150 websites. Along
-            with leading and conducting rapid prototyping projects from concept
-            to demo day.
-          </p>
-
-          <p>
-            In addition to the exposure to industry experience, I have completed
-            20+ full stack projects such as; authentication systems, e-commerce
-            APIs, and automation tools, which complement my previous experiences
-            using MERN, Next.js, and a cloud-native/devops workflow. My goal is
-            to grow as a Full Stack Developer in service-based companies while
-            building impactful solutions that leverage AI and cloud-first
-            technologies.
-          </p>
+        <div class="footerBottom">
+          <p>&copy; 2025 Yash Trivedi. All Rights Reserved.</p>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
