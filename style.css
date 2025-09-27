@@ -431,11 +431,16 @@ footer {
 
   header .hamburger {
     display: flex;
+    margin-left: auto;
   }
 
   header nav.menu ul {
     flex-direction: column;
     gap: 15px;
+  }
+
+  header .icons {
+    display: none;
   }
 }
 
