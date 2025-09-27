@@ -3,7 +3,7 @@
 A modern, responsive **personal portfolio website** to showcase my projects, skills, and contact information.  
 Built with **HTML, CSS, and Bootstrap Icons** for a clean and professional presentation.  
 
-# Live Link: https://yash-trivedi-portfolio.netlify.app/
+# Live Link: [https://yash-trivedi-portfolio.netlify.app/](https://yash-trivedi-portfolio-website.vercel.app/)
 
 ---
 
