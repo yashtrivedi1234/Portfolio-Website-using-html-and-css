@@ -18,6 +18,7 @@
           <h1>Yash Trivedi</h1>
         </div>
 
+        <input type="checkbox" id="menu-toggle" hidden />
         <label class="hamburger" for="menu-toggle">
           <span></span>
           <span></span>
@@ -59,38 +60,54 @@
       </header>
       <!-- Header End -->
 
-      <!-- Hero Section Start -->
-      <main>
-        <section class="hero" id="home">
+      <!-- Hero / Home Section Start -->
+      <main id="home">
+        <section class="hero" id="about">
           <figure class="left">
             <img src="./Assets/mypic.png" alt="Yash Trivedi" />
           </figure>
           <div class="right">
             <h2>Yash Trivedi</h2>
             <p>
-              I am a B.Tech Computer Science student (2027) with a strong
-              interest in full-stack development, back-end systems, and AI
-              integrations. I have a solid academic background and
-              certifications in Full Stack Development, REST APIs, and DevOps,
-              enabling me to design secure, scalable, and data-driven solutions.
+              Hello! I’m <strong>Yash Trivedi</strong>, a
+              <strong>Full Stack Web Developer</strong> from
+              <strong>Sitapur, Uttar Pradesh</strong>. I specialize in
+              <strong>MERN</strong> and <strong>Next.js</strong>, building
+              <strong>secure</strong>, <strong>scalable</strong>, and
+              <strong>production-ready applications</strong>. Over the past few
+              years, I’ve designed and deployed
+              <strong>web applications</strong>, <strong>APIs</strong>, and
+              <strong>AI-integrated solutions</strong>, leveraging technologies
+              like <strong>Node.js</strong>, <strong>Express</strong>,
+              <strong>React</strong>, <strong>MongoDB</strong>,
+              <strong>PostgreSQL</strong>, and <strong>Supabase</strong>.
             </p>
-
             <p>
-              I have completed internships at Unified Mentor Pvt Ltd, Xenovate
-              Tech Solutions, and ERA Foundation India. At Unified Mentor, I
-              developed a video calling platform using WebRTC and JWT
-              authentication. At Xenovate, I built a Python-based web scraper
-              with FastAPI covering 150+ websites. I also led rapid prototyping
-              projects from concept to demo day.
+              I have hands-on experience with
+              <strong>authentication systems (JWT, OAuth, Clerk)</strong>,
+              <strong>payment integrations (Stripe, Razorpay)</strong>, and
+              <strong>responsive UI/UX design</strong> using tools like
+              <strong>Figma</strong>, <strong>Tailwind CSS</strong>, and
+              <strong>Shadcn UI</strong>. I’m also skilled in
+              <strong>DevOps workflows</strong>, <strong>Docker</strong>,
+              <strong>CI/CD pipelines</strong>, and
+              <strong>cloud deployment</strong> on platforms like
+              <strong>AWS</strong>, <strong>Vercel</strong>, and
+              <strong>Netlify</strong>.
             </p>
-
             <p>
-              I have completed 20+ full stack projects including authentication
-              systems, e-commerce APIs, and automation tools using MERN,
-              Next.js, and cloud-native/devops workflows. My goal is to grow as
-              a Full Stack Developer in service-based companies, delivering
-              impactful AI and cloud-first solutions.
+              Beyond coding, I’ve led
+              <strong>rapid prototyping projects</strong>,
+              <strong>team collaborations</strong>, and
+              <strong>AI/LLM integrations</strong> to create functional,
+              <strong>user-focused solutions</strong>. I enjoy
+              <strong>solving complex problems</strong>,
+              <strong>optimizing systems</strong> for performance, and
+              continuously <strong>learning new technologies</strong> to stay
+              ahead in the ever-evolving
+              <strong>web development landscape</strong>.
             </p>
+            <p>Let’s <strong>build something impactful together</strong>!</p>
           </div>
         </section>
 
@@ -292,9 +309,7 @@
                 opportunities. I'm always open to discussing new ideas and
                 challenges!
               </p>
-              <p>
-                <i class="bi bi-envelope-at"></i> yashtrivedi.contact@gmail.com
-              </p>
+              <p><i class="bi bi-envelope-at"></i> yashtrivedi.contact@gmail.com</p>
               <p><i class="bi bi-telephone-fill"></i> +91 9452819739</p>
               <p><i class="bi bi-geo-alt-fill"></i> Sitapur, Uttar Pradesh</p>
             </article>
@@ -302,31 +317,13 @@
             <aside class="form">
               <form>
                 <label for="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
 
                 <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
 
                 <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Your Message"
-                  rows="5"
-                  required
-                ></textarea>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
 
                 <button type="submit">Send Message</button>
               </form>
@@ -335,15 +332,14 @@
         </section>
         <!-- Contact Section End -->
       </main>
-      <!-- Fotter Start -->
+      <!-- Hero / Home End -->
+
+      <!-- Footer Start -->
       <footer>
         <div class="footerContainer">
           <div class="footerAbout">
             <h3>Yash Trivedi</h3>
-            <p>
-              B.Tech Computer Science (2027) | Full Stack Developer | AI & Cloud
-              Enthusiast
-            </p>
+            <p>B.Tech Computer Science (2027) | Full Stack Developer | AI & Cloud Enthusiast</p>
           </div>
 
           <div class="footerLinks">
@@ -358,27 +354,9 @@
 
           <div class="footerSocial">
             <h4>Follow Me</h4>
-            <a
-              href="https://leetcode.com/u/yash-trivedi-contact/"
-              target="_blank"
-              aria-label="Leetcode"
-            >
-              <img src="./Assets/leetcode.png" alt="Leetcode" />
-            </a>
-            <a
-              href="https://github.com/yashtrivedi1234"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <img src="./Assets/github.png" alt="GitHub" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yash-trivedi-contact/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <img src="./Assets/linkedin.png" alt="LinkedIn" />
-            </a>
+            <a href="https://leetcode.com/u/yash-trivedi-contact/" target="_blank"><img src="./Assets/leetcode.png" alt="Leetcode" /></a>
+            <a href="https://github.com/yashtrivedi1234" target="_blank"><img src="./Assets/github.png" alt="GitHub" /></a>
+            <a href="https://www.linkedin.com/in/yash-trivedi-contact/" target="_blank"><img src="./Assets/linkedin.png" alt="LinkedIn" /></a>
           </div>
         </div>
 
@@ -386,6 +364,28 @@
           <p>&copy; 2025 Yash Trivedi. All Rights Reserved.</p>
         </div>
       </footer>
+      <!-- Footer End -->
     </div>
+
+    <!-- Smooth Scrolling & Hamburger JS -->
+    <script>
+      const menuLinks = document.querySelectorAll(".menu a");
+      const menuToggle = document.getElementById("menu-toggle");
+
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70, 
+              behavior: "smooth"
+            });
+          }
+          menuToggle.checked = false; 
+        });
+      });
+    </script>
   </body>
 </html>
